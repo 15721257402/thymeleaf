@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:risk="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>sb列表</title>
+    <link href="/css/main.css" rel="stylesheet" />
+</head>
+<body>
+<h1 th:text="${sb}">Hello, Spring Boot!</h1>
+
+<risk:sanstitv path="测试"></risk:sanstitv>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>姓名</th>
+        <th>生日</th>
+        <th>薪资</th>
+    </tr>
+    <tr th:each="user : ${sb}">
+        <td th:text="${sb}">0</td>
+        <td th:text="${sb}">zhansan</td>
+        <td th:text="${sb}">1988-06-01</td>
+        <td th:text="${sb}">12345</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
